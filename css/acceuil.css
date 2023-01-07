@@ -185,6 +185,7 @@ header .headNav .télécharger:hover {
 
 #section1 .droite #login2 {
   display: none;
+  width: 85%;
 }
 
 #section1 .droite #loginR1 {
@@ -304,89 +305,82 @@ header .headNav .télécharger:hover {
   transition: 0.3s all;
 }
 
-/* CONTENU DE LA PAGE OFF> */
+/* 
+----------------- CONTENU DE LA PAGE OFF >--------------------- */
 footer {
+  display: flex;
+  flex-direction: column;
   border-top: #a5a5a5 solid 1px;
   background: #111111;
   color: white;
-  padding: 3rem 0 0 0;
+  padding: 2.5% 5%;
 }
 
-footer .footer {
+footer .heightFooter {
   display: flex;
-  flex-wrap: wrap;
+ justify-content: space-between;
 }
 
-footer .footer #social {
-  padding-left: 4rem;
-  flex-wrap: wrap;
+footer .heightFooter .social{
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction: column;
+ width: 31%;
 }
 
-footer .footer #social h3 {
+footer .heightFooter .social h3 {
   color: #ffffff;
   font-size: 1.8rem;
   font-weight: bold;
-  padding: 4rem 0 0 0;
 }
 
-footer .footer #social img {
+
+footer .heightFooter .social .icons img {
   width: 24px;
   height: 22px;
 }
 
-footer .footer #social a {
+footer .heightFooter .social a {
   display: inline-block;
-  margin: 2rem 1rem 0 0;
+  margin: 0.6rem 1rem 0 0;
 }
 
-footer .footer #navigation .nav-footer {
+footer .heightFooter .footNav{
+  margin-right: 60px;
+  width: 69%;
   display: flex;
   flex-wrap: wrap;
-  font-size: 1.04rem;
+  justify-content: space-between;
 }
 
-footer .footer #navigation .nav-footer ul {
+footer .heightFooter .footNav ul{
   list-style: none;
-  padding: 4rem 4rem 1.5rem 4rem;
-  flex-wrap: wrap;
+  margin: 0 20px 50px;
 }
 
-footer .footer #navigation .nav-footer li {
-  color: #ffffff;
-  text-transform: uppercase;
-  padding: 0.4rem;
-}
-
-footer .footer #navigation .nav-footer li a {
-  color: #7e7e7e;
-  text-transform: none;
+footer .heightFooter .footNav ul li a{
   text-decoration: none;
-  justify-content: center;
+  color: #7e7e7e;
 }
+ 
 
-footer .footer #navigation .nav-footer li a:hover {
+footer .heightFooter .footNav ul li a:hover {
   color: #a1a1a1;
 }
 
-footer .ending {
+footer .endingFooter {
   display: flex;
-  margin: 2rem 0 0 0;
-  padding-left: 3rem;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem 0 0 0;
 }
 
-footer .ending .copyright {
-  width: 50%;
+footer .endingFooter .copyright {
+  display: block;
   font-size: 0.8rem;
-  margin: 3rem 0 0 0;
 }
 
-footer .ending .QRcode {
-  width: 50%;
-  margin: 3rem;
-  text-align: end;
-}
-
-footer .ending .QRcode img {
+footer .endingFooter .QRcode {
   cursor: pointer;
 }
 
