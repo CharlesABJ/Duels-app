@@ -24,19 +24,18 @@ header {
   justify-content: center;
   align-items: center;
   background: #111111;
-  border-bottom: #a5a5a5 1px solid;
 }
 
 /* LOGO */
 header .logo {
-  width: 8%;
+  width: 8%; 
+  padding-left: 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 header .logo img {
-  margin-left: 3rem;
   width: 65px;
   transition: 1.7s all;
 }
@@ -49,6 +48,9 @@ header .logo img:hover {
 
 header .logo i {
   color: #ffffff;
+  border: #7e7e7e 1px solid;
+  border-radius: 50%;
+  padding: 15px 17px;
   display: none;
 }
 
@@ -112,6 +114,7 @@ header .headNav .télécharger:hover {
   display: flex;
   width: 100%;
   padding: 2.5% 5% 0 5%;
+  border-top: #a5a5a5 1px solid;
 }
 
 /* GAUCHE */
@@ -190,10 +193,12 @@ header .headNav .télécharger:hover {
 
 #section1 .droite #loginR1 {
   display: none;
+  width: 90%;
 }
 
 #section1 .droite #loginR2 {
   display: none;
+  width: 90%;
 }
 
 #section1b {
@@ -265,7 +270,7 @@ header .headNav .télécharger:hover {
 }
 
 
-#section2 .blocs .bloc .description{
+#section2 .blocs .bloc .description {
   width: 81%;
   display: flex;
   flex-direction: column;
@@ -285,10 +290,10 @@ header .headNav .télécharger:hover {
 }
 
 #section2 button {
- border: none;
+  border: none;
 }
 
-#section2 button a {  
+#section2 button a {
   display: block;
   border-radius: 5px;
   background-color: #6752dc;
@@ -298,7 +303,7 @@ header .headNav .télécharger:hover {
   transition: 0.3s all;
 }
 
-#section2 button a:hover {  
+#section2 button a:hover {
   background-color: #cfcccc;
   color: #111111;
   transform: scale(1.01);
@@ -318,14 +323,14 @@ footer {
 
 footer .heightFooter {
   display: flex;
- justify-content: space-between;
+  justify-content: space-between;
 }
 
-footer .heightFooter .social{
- display: flex;
- flex-wrap: wrap;
- flex-direction: column;
- width: 31%;
+footer .heightFooter .social {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 31%;
 }
 
 footer .heightFooter .social h3 {
@@ -345,7 +350,7 @@ footer .heightFooter .social a {
   margin: 0.6rem 1rem 0 0;
 }
 
-footer .heightFooter .footNav{
+footer .heightFooter .footNav {
   margin-right: 60px;
   width: 69%;
   display: flex;
@@ -353,16 +358,16 @@ footer .heightFooter .footNav{
   justify-content: space-between;
 }
 
-footer .heightFooter .footNav ul{
+footer .heightFooter .footNav ul {
   list-style: none;
   margin: 0 20px 50px;
 }
 
-footer .heightFooter .footNav ul li a{
+footer .heightFooter .footNav ul li a {
   text-decoration: none;
   color: #7e7e7e;
 }
- 
+
 
 footer .heightFooter .footNav ul li a:hover {
   color: #a1a1a1;
@@ -404,6 +409,107 @@ u {
 
 /* ------------RESPONSIVE---------------- */
 
-@media screen and (max-width: 991px) {}
+@media screen and (max-width: 989px) {
+  header {
+    flex-direction: column;
+    justify-content:flex-start;
+    overflow: scroll;
+    height: 100vh;
+  }
+
+  header .logo {
+    width: 100%;
+    padding: 3rem;
+  }
+  header .logo img {
+    width: 75px;
+  }
+
+  header .logo i {
+    display: block;
+    font-size: 40px;
+  }
+
+  header .headNav {
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  header .headNav li{  
+    margin: 50px 0;
+  }
+  
+  header .headNav li a {
+    font-size: 2rem;
+  }
+
+  header .headNav li a:hover {
+    font-size: 2rem;
+  }
+
+/* ================================== */
+
+#section1 {
+  flex-direction: column;
+}
+
+#section1 .gauche {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+#section1 .gauche .description h1 {
+  display: none;
+}
+
+#section1 .gauche .description .h1_Responsive {
+  display: block;
+  font-size: 2.5rem;
+}
+
+#section1 .gauche .description p {
+  font-size: 1.1rem;
+}
+
+#section1 .gauche .downloadIcons {
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  margin: 7% 0;
+}
+
+
+#section1 .gauche .downloadIcons .ios {
+display: none;
+}
+
+#section1 .gauche .downloadIcons .android {
+  display: none;
+  }
+
+  #section1 .gauche .downloadIcons .responsiveDownload img {
+    display: block;
+    width: 280px;
+  }
+
+
+  #section1 .droite {
+    width: 100%;
+  }
+
+  #section1 .droite #login1 {
+    display: none;
+  }
+
+  #section1 .droite #loginR1 {
+    display: block;
+  }
+  
+  #section1b {
+    display: none;
+   }
+  
+}
 
 @media screen and (max-width: 767px) {}
