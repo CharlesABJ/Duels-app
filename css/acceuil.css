@@ -201,7 +201,7 @@ header .headNav .télécharger:hover {
 }
 
 
-
+/* ------------------------------------------------------- */
 #section2 {
   width: 100%;
   background: #ffffff;
@@ -212,67 +212,95 @@ header .headNav .télécharger:hover {
 }
 
 #section2 h2 {
-  margin: 3rem 0 2rem 0;
+  margin: 3rem 0 1rem 0;
 }
 
-#section2 #blocs {
+#section2 p {
+  margin: 0.5rem 0;
+}
+
+#section2 .blocs {
   display: flex;
   flex-wrap: wrap;
-  margin: 5rem 1rem 5rem 1rem;
-  text-align: center;
+  margin: 5rem 0;
   justify-content: center;
 }
 
-#section2 #blocs .bloc {
-  position: relative;
-  background: white;
-  margin: 0.5rem;
+#section2 .blocs .bloc {
+  display: flex;
+  flex-direction: column;
   width: 350px;
   height: 400px;
   border: solid 2px #e5e5e5;
-  padding: 4rem;
+  margin: 7px;
+  padding: 50px;
+  align-items: center;
 }
 
-#section2 #blocs .bloc h3 {
+#section2 .blocs .bloc .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#section2 .blocs .bloc .icon img {
+  width: 20%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#section2 .blocs .bloc .icon .games {
+  margin-left: 1rem;
+}
+
+#section2 .blocs .bloc .icon .rewards {
+  width: 16%;
+}
+
+#section2 .blocs .bloc .icon img:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+
+#section2 .blocs .bloc .description{
+  width: 81%;
+  display: flex;
+  flex-direction: column;
+}
+
+#section2 .blocs .bloc .description h3 {
   padding: 1rem;
   color: #111111;
 }
 
-#section2 #blocs .bloc p {
+#section2 .blocs .bloc .description p {
   color: #7e7e7e;
-}
-
-#section2 #blocs .bloc button {
-  position: absolute;
-  background: #111111;
-  border: none;
-  width: 50px;
-  height: 2px;
-  bottom: 50px;
-  left: 170px;
-}
-
-#section2 #blocs .bloc_icone {
-  width: 50px;
 }
 
 #section2 h4 {
   margin: 3rem;
 }
 
-#section2 #bouton {
-  padding: 15px 35px;
+#section2 button {
+ border: none;
+}
+
+#section2 button a {  
+  display: block;
   border-radius: 5px;
-  text-decoration: none;
   background-color: #6752dc;
+  text-decoration: none;
   color: #ffffff;
-  justify-content: center;
+  padding: 15px 35px;
   transition: 0.3s all;
 }
 
-#section2 #bouton:hover {
+#section2 button a:hover {  
   background-color: #cfcccc;
   color: #111111;
+  transform: scale(1.01);
   transition: 0.3s all;
 }
 
