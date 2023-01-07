@@ -20,49 +20,47 @@ body{
 header {
   width: 100%;
   height: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #111111;
   border-bottom: #a5a5a5 1px solid;
 }
 
-header .nav-main {
-  height: 100%;
+/* LOGO */
+header .logo {
+  width: 8%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
-
-/* LOGO */
-header .headNav .logo {
-  width: 8%;
-}
-
-header .headNav .logo img {
+header .logo img {
   margin-left: 3rem;
   width: 65px;
   transition: 1.7s all;
 }
 
-header .headNav .logo img:hover {
+header .logo img:hover {
   transform: rotate(360deg);
   transition: 1.7s all;
+
+}header .logo i {
+ color: #ffffff;
+ display: none;
 }
 
 /* NAVIGATION  */
-
-header .nav-main .main {
+header .headNav{
   width: 92%;
-}
-
-header .nav-main .main {
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
   align-items: center;
   justify-content: center;
+  list-style: none;
 }
 
-header .nav-main .main li a {
+header .headNav li a {
   text-decoration: none;
   color: #7e7e7e;
   margin: 10px 30px;
@@ -71,21 +69,21 @@ header .nav-main .main li a {
   transition: 0.3s all;
 }
 
-header .nav-main .main li a:hover {
+header .headNav li a:hover {
   color: #a1a1a1;
   font-size: 0.9rem;
   transition: 0.3s all;
 }
 
-header .nav-main .main li .active {
+header .headNav li .active {
   color: #ffffff;
 }
 
-header .nav-main .main li .active:hover {
+header .headNav li .active:hover {
   color: #ffffff;
 }
 
-header .nav-main .main .télécharger {
+header .headNav .télécharger {
   padding: 1.2rem 2rem;
   border-radius: 100px;
   background-color: #cfcccc;
@@ -93,41 +91,20 @@ header .nav-main .main .télécharger {
   transition: 0.8s all;
 }
 
-header .nav-main .main .télécharger:hover {
+header .headNav .télécharger:hover {
   background-color: #ffffff;
   color: #111111;
   padding: 1.3rem 2.1rem;
   transition: 0.5s all;
 }
 
-/* TOGGLE NAV */
-
-header .nav-main .toggleNav {
-  height: 100%;
-  display: none;
-}
-
-header .nav-main .toggleNav img {
-  height: 65%;
-  cursor: pointer;
-}
-
-header .nav-main .toggleNav .ouvrir {
-  display: block;
-}
-
-header .nav-main .toggleNav .fermer {
-  display: none;
-}
 
 /* ------------------------HEADER-OFF>-------------------------*/
 
+
 /* 
 ------------------CONTENU DE LA PAGE<ON--------------------- */
-/* .content {
-  height: 80vh;
-  background: #111111;
-} */
+
 
 .content #section1 {
   background-color: #111111;
