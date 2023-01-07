@@ -10,7 +10,7 @@
   font-family: Comic, Helvetica, sans-serif;
 }
 
-body{
+body {
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -45,13 +45,15 @@ header .logo img:hover {
   transform: rotate(360deg);
   transition: 1.7s all;
 
-}header .logo i {
- color: #ffffff;
- display: none;
+}
+
+header .logo i {
+  color: #ffffff;
+  display: none;
 }
 
 /* NAVIGATION  */
-header .headNav{
+header .headNav {
   width: 92%;
   display: flex;
   flex-wrap: wrap;
@@ -104,91 +106,101 @@ header .headNav .télécharger:hover {
 
 /* 
 ------------------CONTENU DE LA PAGE<ON--------------------- */
-
-
-.content #section1 {
+#section1 {
   background-color: #111111;
   color: white;
   display: flex;
-  /* height: 1000px; */
   width: 100%;
   padding: 2.5% 5% 0 5%;
-  user-select: none;
 }
 
-.content #section1 .gauche {
+/* GAUCHE */
+#section1 .gauche {
   width: 55%;
   display: flex;
   flex-direction: column;
-padding: 0;
+  padding: 0;
 }
 
-.content #section1 .gauche .description {
-  display: flex;
-  flex-direction: column;
-}
-
-.content #section1 .gauche .description h1 {
+/* Description */
+#section1 .gauche .description h1 {
   margin: 12% 0 8% 0;
   font-size: 3rem;
   font-weight: bold;
 }
 
-.content #section1 .gauche #h1-responsive {
+#section1 .gauche .description .h1_Responsive {
   display: none;
 }
 
-.content #section1 .gauche .description p {
+#section1 .gauche .description p {
   font-size: 1rem;
   font-weight: 400;
   color: #a1a1a1;
 }
 
-.content #section1 .gauche .description .responsiveDownload img {
-  width: 30%;
-  margin: 6% 0 9% 0;
-  display: none;
-}
-.content #section1 .gauche .description #login1r {
-  width: 80%;
-  display: none;
-}
-
-.content #section1 .gauche .description #login2r {
-  width: 80%;
-  display: none;
-}
-
-
-.content #section1 .gauche .downloadIcones {
+/* Download */
+#section1 .gauche .downloadIcons {
   height: 45%;
   display: flex;
+  flex-direction: column;
   margin: 15% 0 0 0;
 }
 
-.content #section1 .gauche .downloadIcones #ios {
+#section1 .gauche .downloadIcons a {
+  width: max-content;
+}
+
+#section1 .gauche .downloadIcons .ios {
   width: 250px;
+  transition: 0.3s all;
 }
 
-.content #section1 .gauche .downloadIcones #android {
+#section1 .gauche .downloadIcons .android {
   width: 270px;
+  transition: 0.3s all;
 }
 
-.content #section1 .droite {
+#section1 .gauche .downloadIcons .responsiveDownload img {
+  display: none;
+}
+
+#section1 .gauche .downloadIcons img:hover {
+  transform: scale(1.05);
+  margin: 1px;
+}
+
+
+
+/* DROITE */
+#section1 .droite {
   width: 45%;
   display: flex;
   justify-content: center;
 }
 
-.content #section1 .droite #login2 {
+#section1 .droite #login1 {
+  width: 85%;
+}
+
+#section1 .droite #login2 {
   display: none;
 }
 
+#section1 .droite #loginR1 {
+  display: none;
+}
 
-.content #section1b {
+#section1 .droite #loginR2 {
+  display: none;
+}
+
+#section1b {
   height: 265px;
   background: linear-gradient(#111111, #39394f);
 }
+
+
 
 #section2 {
   width: 100%;
@@ -370,10 +382,6 @@ u {
 
 /* ------------RESPONSIVE---------------- */
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 991px) {}
 
-}
-
-@media screen and (max-width: 767px){
-  
-}
+@media screen and (max-width: 767px) {}
