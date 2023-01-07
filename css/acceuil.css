@@ -10,6 +10,11 @@
   font-family: Comic, Helvetica, sans-serif;
 }
 
+body{
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 /* ----------------------HEADER-ON<--------------------------- */
 
 header {
@@ -115,14 +120,6 @@ header .nav-main .toggleNav .fermer {
   display: none;
 }
 
-.open header .nav-main .toggleNav .ouvrir {
-  display: none;
-}
-
-.open header .nav-main .toggleNav .fermer {
-  display: block;
-}
-
 /* ------------------------HEADER-OFF>-------------------------*/
 
 /* 
@@ -206,12 +203,7 @@ padding: 0;
   justify-content: center;
 }
 
-.content #section1 .droite #login1 {
-  width: 85%;
-}
-
 .content #section1 .droite #login2 {
-  width: 85%;
   display: none;
 }
 
@@ -401,217 +393,10 @@ u {
 
 /* ------------RESPONSIVE---------------- */
 
-@media screen and (min-width: 1441px)  and (max-width:2560px) {
-  header {
-    height: 130px;
-  }
-  header .nav-main .main li a {
-    font-size: 1.7rem;
-  }
+@media screen and (max-width: 991px) {
 
-  .content #section1 .gauche .description h1 {
-    font-size: 5.5rem;
-  }
-  
-  .content #section1 .gauche .description p {
-    font-size: 2rem;
-  }
-
-  .content #section1 .gauche .downloadIcones #ios {
-    width: 350px;
-  }
-  
-  .content #section1 .gauche .downloadIcones #android {
-    width: 370px;
-  }
-}
-@media screen and (max-width: 1215px) {
-  footer .footer #navigation .nav-footer ul {
-    padding: 4rem 1rem 1.5rem 3rem;
-  
-  }
-
-  footer .footer #navigation .nav-footer li {
-    color: #ffffff;
-    font-size: 1rem;
-  }
-
-  footer .footer #navigation .nav-footer ul {
-    padding: 4rem 1rem 1.5rem 3.5rem;
-  
-  }
 }
 
-
-@media screen and (max-width: 1160px) {
-  /* Header */
-
-  header {
-    border: none;
-  }
-
-  header .nav-main {
-    justify-content: space-around;
-    width: 100%;
-  }
-
-  header .nav-main .logo {
-    width: 50%;
-  }
-
-  header .nav-main .logo img {
-    margin: 0 0 0 3%;
-  }
-
-  header .nav-main .main {
-    display: none;
-  }
-
-  header .nav-main .toggleNav {
-    display: flex;
-    width: 50%;
-    margin: 0;
-    justify-content: end;
-    align-items: center;
-  }
-
-  header .nav-main .toggleNav img {
-    margin: 0 3% 0 0 ;
-  }
-
-
-  /* Section 1 */
-
-  .content #section1 {
-    width: 100%;
-    padding: 0;
-    margin: 0;
+@media screen and (max-width: 767px){
   
-  }
-
-  .content #section1 .gauche{
-    width: 100%;
-    user-select: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .content #section1 .gauche h1 {
-    display: none;
-  }
-
-  .content #section1 .gauche #h1-responsive {
-    display: block;
-    margin: 15% 0 5% 0;
-    font-size: 3.2rem;
-  }
-
-  .content #section1 .gauche .description p {
-    font-size: 1.2rem;
-  }
-
-  .content #section1 .gauche .description .responsiveDownload img {
-    display: inline-block;
-  }
-
-  .content #section1 .gauche .description #login1r {
-    display: inline-block;
-  }
-  
-
-  .content #section1 .gauche .downloadIcones{
-    display: none;
-  }
-
-  .content #section1 .gauche .login-responsive .iconesResponsive{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-
-  .content #section1 .gauche .login-responsive {
-    display: block; margin: 0;
-  }
-
-  #section1 .gauche .login-responsive #login1r {
-  }
-  
-  .content #section1 .droite{
-  display: none;
-  }
-  
-  .content #section1 .droite .login{
-    display: none;
-   
-  }
-
-  .content #section1b{
-    display: none;
-  }
-
-  footer .footer #navigation .nav-footer ul {
-    padding: 4rem 1rem 1.5rem 3.5rem;
-  
-  }
-  
-}
-
-
-@media screen and (max-width: 769px) {
-  .content #section1 .gauche #h1-responsive {
-    font-size: 2.8rem;
-  }
-
-  .content #section1 .gauche .description p {
-    font-size: 1rem;
-  }
-
-  footer .footer #navigation .nav-footer ul {
-    padding: 4rem 1rem 1.5rem 3.5rem;
-  
-  }
-}
-
-@media screen and (max-width: 426px) {
-  .content #section1 .gauche #h1-responsive {
-    font-size: 1.4rem;
-  }
-
-  .content #section1 .gauche .description p {
-    font-size: 0.5rem;
-  }
-
-  h2{
-    font-size: 0.9rem;
-  }
-
-  p{
-    font-size: 0.6rem;
-  }
-
-  h3{
-    font-size: 1.2rem;
-  }
-
-  footer .footer #social h3 {
-    color: #ffffff;
-    font-size: 1.5rem;
-  }
-
-  footer .footer #navigation .nav-footer ul {
-    padding: 4rem 1rem 1.5rem 3.5rem;
-  
-  }
-
-  footer .footer #navigation .nav-footer li {
-    color: #ffffff;
-    font-size: 0.8rem;
-  }
-}
-
-@media screen and (max-width: 376px) {
- 
 }

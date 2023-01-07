@@ -177,7 +177,9 @@ header #nav-main #main #télécharger:hover {
 #section2 .partnerIcones {
   width: 50%;
   display: flex;
-  text-align: center;
+ text-align: center;
+
+ align-items: center;
 }
 
 #section2 .partnerIcones figure {
