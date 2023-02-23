@@ -135,8 +135,13 @@ section .droite {
 
 section .droite .panneau {
   cursor: pointer;
+  pointer-events: auto;
   width: 400px;
+    filter: drop-shadow(8px 8px 10px  #535353);
+
+  
 }
+
 
 /* CONTENU DE LA PAGE OFF> */
 footer {

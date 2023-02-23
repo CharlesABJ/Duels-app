@@ -8,7 +8,7 @@
     <link rel="icon" href="./images/Logo_noir.png" media="(prefers-color-scheme: light)">
     <link rel="icon" href="./images/Logo_blanc.png" media="(prefers-color-scheme: dark)">
     <title>Acceuil - Duels</title>
-    <script src="https://kit.fontawesome.com/a117eb47ea.js" crossorigin="anonymous"></script>
+    <script defer src="https://kit.fontawesome.com/a117eb47ea.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/accueil.css">
 </head>
 
@@ -18,34 +18,35 @@
 
         <div class="logo">
             <a href="#">
-                <img src="./images/Logo_blanc.png" alt="Duels logo">
+                <img src="./images/Logo_blanc.png" alt="logo Duels">
             </a>
-            <i class="fa-solid fa-bars"></i>
+            <i id="bubble-nav" class="fa-solid fa-bars"></i>
         </div>
 
-        <ul class="headNav">
-            <li><a class="active" href="acceuil.html">ACCEUIL</a></li>
+        <ul class="head-nav">
+            <li><a class="active" href="accueil.html">ACCUEIL</a></li>
             <li><a href="àpropos.html">À PROPOS</a></li>
             <li><a href="jeux.html">JEUX</a></li>
             <li><a href="faq.html">F.A.Q</a></li>
             <li><a href="contact.html">CONTACT</a></li>
-            <li><a class="télécharger" href="#" target="_blank">TÉLÉCHARGER</a></li>
+            <li><a class="download" href="#" target="_blank">TÉLÉCHARGER</a></li>
+            <li><a class="download-responsive" href="#"><i class="fa-solid fa-download"></i></a></li>
         </ul>
 
     </header>
 
     <main>
 
-        <section id="section1">
+        <section id="Introduction">
 
-            <div class="gauche">
+            <div class="left">
 
                 <div class="description">
                     <h1>DÉFIE DES<br>
                         JOUEURS, GAGNE<br>
                         DES RÉCOMPENSES
                     </h1>
-                    <h1 class="h1_Responsive">
+                    <h1 class="h1-responsive">
                         DÉFIE DES JOUEURS <br>
                         GAGNE DES RÉCOMPENSES
                     </h1>
@@ -57,17 +58,17 @@
                     </p>
                 </div>
 
-                <div class="downloadIcons">
-                    <a href="#" target="_blank"><img class="ios" src="./images/app store.png" alt="App store"></a>
-                    <a href="#" target="_blank"><img class="android" src="./images/google play.png"
+                <div class="download-icons">
+                    <a href="#" target="_blank"><img class="ios" src="./images/appstore.png" alt="App store"></a>
+                    <a href="#" target="_blank"><img class="android" src="./images/googleplay.png"
                             alt="Google play"></a>
-                    <a class="responsiveDownload" href="#" target="_blank"><img
+                    <a class="responsive-download" href="#" target="_blank"><img
                             src="./images/downloadResponsiveIcone.svg" alt="Icone Télécharger">
                     </a>
                 </div>
             </div>
 
-            <div class="droite">
+            <div class="right">
                 <img id="login1" src="./images/Login1.png" alt="Login Duels">
                 <img id="login2" src="./images/Login2.png" alt="Login Duels">
 
@@ -77,12 +78,12 @@
 
         </section>
 
-        <div id="section1b">
+        <div id="Space">
         </div>
 
-        <section id="section2">
+        <section id="Functioning">
 
-            <h2>UNE MESSAGERIE <span class="violet">ORIGINALE</span></h2>
+            <h2>UNE MESSAGERIE <span class="purple">ORIGINALE</span></h2>
             <p>
                 « Duels » est une messagerie mobile sécurisée et totalement gratuite<br>
                 qui te permet de faire connaissance avec tout un tas de personnes à travers le monde,<br>
@@ -96,11 +97,11 @@
                 <b>GRATUITEMENT</b> sur <b>TA</b> propre victoire dans les jeux de ton choix !
             </p>
 
-            <div class="blocs">
+            <div class="cards-zone">
 
-                <div class="bloc">
+                <div class="card">
                     <div class="icon">
-                        <img class="games" src="./images/Jeux.svg">
+                        <img class="games" src="./images/Jeux.svg" alt="icone de jeux">
                     </div>
                     <div class="description">
                         <h3>JOUE & PARIE <br> SUR TA VICTOIRE</h3>
@@ -112,9 +113,9 @@
                     </div>
                 </div>
 
-                <div class="bloc">
+                <div class="card">
                     <div class="icon">
-                        <img src="./images/Jetons.svg">
+                        <img src="./images/Jetons.svg" alt="icone de jetons">
                     </div>
                     <div class="description">
                         <h3>ACCUMULE LES JETONS</h3>
@@ -125,9 +126,9 @@
                     </div>
                 </div>
 
-                <div class="bloc">
+                <div class="card">
                     <div class="icon">
-                        <img class="rewards" src="./images/Récompences.svg">
+                        <img class="rewards" src="./images/Récompences.svg" alt="icone de récompense">
                     </div>
                     <div class="description">
                         <h3>GAGNE DES RÉCOMPENSES</h3>
@@ -143,7 +144,7 @@
             <h4>Alors qu'est-ce que tu attends ?</h4>
 
 
-            <button><a href="#">Télécharger Duels</a></button>
+            <a href="#">Télécharger Duels</a>
 
         </section>
 
@@ -151,7 +152,7 @@
 
     <footer>
 
-        <div class="heightFooter">
+        <div class="height-footer">
             <div class="social">
                 <h3>PARIE SUR TA<br>
                     PROPRE VICTOIRE</h3>
@@ -164,7 +165,7 @@
                 </div>
             </div>
 
-            <nav class="footNav">
+            <nav class="foot-nav">
                 <ul>
                     <li>PRODUIT</li>
                     <li><a href="#">Télécharger</a></li>
@@ -178,7 +179,7 @@
                     <li><a href="àpropos.html#section3">Rejoindre l'équipe</a></li>
                 </ul>
                 <ul>
-                    <p>LÉGAL</p>
+                    <li>LÉGAL</li>
                     <li><a href="mention-legal.html">Mentions légales</a></li>
                     <li><a href="politiquedeconfidentialité.html">Politique de confidentialité</a></li>
                     <li><a href="cgv.html">Conditions d'utilisation</a></li>
@@ -187,11 +188,11 @@
             </nav>
         </div>
 
-        <div class="endingFooter">
+        <div class="ending-footer">
             <p class="copyright">
                 © JK Family
             </p>
-            <img class="QRcode" src="./images/qrcode.png" alt="QR code" width="50px" title="héhé ;)">
+            <img src="./images/qrcode.png" alt="QR code" title="héhé ;)">
         </div>
 
     </footer>

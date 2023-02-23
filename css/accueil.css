@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Comic";
-  src: url(./polices/comic-sans-ms_[fr.allfont.net].ttf);
+  src: url(/polices/comic-sans-ms_[fr.allfont.net].ttf);
 }
 
 * {
@@ -28,7 +28,7 @@ header {
 
 /* LOGO */
 header .logo {
-  width: 8%; 
+  width: 8%;
   padding-left: 3rem;
   display: flex;
   justify-content: space-between;
@@ -37,16 +37,16 @@ header .logo {
 
 header .logo img {
   width: 65px;
-  transition: 1.7s all;
+  transition: transform 1.7s all;
 }
 
 header .logo img:hover {
   transform: rotate(360deg);
-  transition: 1.7s all;
+  transition: transform 1.7s;
 
 }
 
-header .logo i {
+header .logo #bubble-nav {
   color: #ffffff;
   border: #7e7e7e 1px solid;
   border-radius: 50%;
@@ -55,16 +55,15 @@ header .logo i {
 }
 
 /* NAVIGATION  */
-header .headNav {
+header .head-nav {
   width: 92%;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   list-style: none;
 }
 
-header .headNav li a {
+header .head-nav li a {
   text-decoration: none;
   color: #7e7e7e;
   margin: 10px 30px;
@@ -73,21 +72,21 @@ header .headNav li a {
   transition: 0.3s all;
 }
 
-header .headNav li a:hover {
+header .head-nav li a:hover {
   color: #a1a1a1;
   font-size: 0.9rem;
   transition: 0.3s all;
 }
 
-header .headNav li .active {
+header .head-nav li .active {
   color: #ffffff;
 }
 
-header .headNav li .active:hover {
+header .head-nav li .active:hover {
   color: #ffffff;
 }
 
-header .headNav .télécharger {
+header .head-nav .download {
   padding: 1.2rem 2rem;
   border-radius: 100px;
   background-color: #cfcccc;
@@ -95,20 +94,23 @@ header .headNav .télécharger {
   transition: 0.8s all;
 }
 
-header .headNav .télécharger:hover {
+header .head-nav .download:hover {
   background-color: #ffffff;
   color: #111111;
   padding: 1.3rem 2.1rem;
   transition: 0.5s all;
 }
 
+header .head-nav .download-responsive {
+  display: none;
+}
 
 /* ------------------------HEADER-OFF>-------------------------*/
 
 
 /* 
 ------------------CONTENU DE LA PAGE<ON--------------------- */
-#section1 {
+#Introduction {
   background-color: #111111;
   color: white;
   display: flex;
@@ -117,8 +119,8 @@ header .headNav .télécharger:hover {
   border-top: #a5a5a5 1px solid;
 }
 
-/* GAUCHE */
-#section1 .gauche {
+/* left */
+#Introduction .left {
   width: 55%;
   display: flex;
   flex-direction: column;
@@ -126,89 +128,89 @@ header .headNav .télécharger:hover {
 }
 
 /* Description */
-#section1 .gauche .description h1 {
+#Introduction .left .description h1 {
   margin: 12% 0 8% 0;
   font-size: 3rem;
   font-weight: bold;
 }
 
-#section1 .gauche .description .h1_Responsive {
+#Introduction .left .description .h1-responsive {
   display: none;
 }
 
-#section1 .gauche .description p {
+#Introduction .left .description p {
   font-size: 1rem;
   font-weight: 400;
   color: #a1a1a1;
 }
 
 /* Download */
-#section1 .gauche .downloadIcons {
+#Introduction .left .download-icons {
   height: 45%;
   display: flex;
   flex-direction: column;
   margin: 15% 0 0 0;
 }
 
-#section1 .gauche .downloadIcons a {
+#Introduction .left .download-icons a {
   width: max-content;
 }
 
-#section1 .gauche .downloadIcons .ios {
+#Introduction .left .download-icons .ios {
   width: 250px;
   transition: 0.3s all;
 }
 
-#section1 .gauche .downloadIcons .android {
+#Introduction .left .download-icons .android {
   width: 270px;
   transition: 0.3s all;
 }
 
-#section1 .gauche .downloadIcons .responsiveDownload img {
+#Introduction .left .download-icons .responsive-download img {
   display: none;
 }
 
-#section1 .gauche .downloadIcons img:hover {
+#Introduction .left .download-icons img:hover {
   transform: scale(1.05);
   margin: 1px;
 }
 
 
 
-/* DROITE */
-#section1 .droite {
+/* right */
+#Introduction .right {
   width: 45%;
   display: flex;
   justify-content: center;
 }
 
-#section1 .droite #login1 {
+#Introduction .right #login1 {
   width: 85%;
 }
 
-#section1 .droite #login2 {
+#Introduction .right #login2 {
   display: none;
   width: 85%;
 }
 
-#section1 .droite #loginR1 {
+#Introduction .right #loginR1 {
   display: none;
   width: 90%;
 }
 
-#section1 .droite #loginR2 {
+#Introduction .right #loginR2 {
   display: none;
   width: 90%;
 }
 
-#section1b {
+#Space {
   height: 265px;
   background: linear-gradient(#111111, #39394f);
 }
 
 
 /* ------------------------------------------------------- */
-#section2 {
+#Functioning {
   width: 100%;
   background: #ffffff;
   color: #000000;
@@ -217,22 +219,22 @@ header .headNav .télécharger:hover {
   margin-bottom: 5rem;
 }
 
-#section2 h2 {
+#Functioning h2 {
   margin: 3rem 0 1rem 0;
 }
 
-#section2 p {
+#Functioning p {
   margin: 0.5rem 0;
 }
 
-#section2 .blocs {
+#Functioning .cards-zone {
   display: flex;
   flex-wrap: wrap;
   margin: 5rem 0;
   justify-content: center;
 }
 
-#section2 .blocs .bloc {
+#Functioning .cards-zone .card {
   display: flex;
   flex-direction: column;
   width: 350px;
@@ -243,70 +245,64 @@ header .headNav .télécharger:hover {
   align-items: center;
 }
 
-#section2 .blocs .bloc .icon {
+#Functioning .cards-zone .card .icon {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
 
-#section2 .blocs .bloc .icon img {
+#Functioning .cards-zone .card .icon img {
   width: 20%;
   transition: 0.3s;
   cursor: pointer;
 }
 
-#section2 .blocs .bloc .icon .games {
+#Functioning .cards-zone .card .icon .games {
   margin-left: 1rem;
 }
 
-#section2 .blocs .bloc .icon .rewards {
+#Functioning .cards-zone .card .icon .rewards {
   width: 16%;
 }
 
-#section2 .blocs .bloc .icon img:hover {
+#Functioning .cards-zone .card .icon img:hover {
   transform: scale(1.05);
   transition: 0.3s;
 }
 
 
-#section2 .blocs .bloc .description {
+#Functioning .cards-zone .card .description {
   width: 81%;
   display: flex;
   flex-direction: column;
 }
 
-#section2 .blocs .bloc .description h3 {
+#Functioning .cards-zone .card .description h3 {
   padding: 1rem;
   color: #111111;
 }
 
-#section2 .blocs .bloc .description p {
+#Functioning .cards-zone .card .description p {
   color: #7e7e7e;
 }
 
-#section2 h4 {
+#Functioning h4 {
   margin: 3rem;
 }
 
-#section2 button {
-  border: none;
-}
-
-#section2 button a {
-  display: block;
+#Functioning a {
   border-radius: 5px;
   background-color: #6752dc;
   text-decoration: none;
   color: #ffffff;
-  padding: 15px 35px;
+  padding: 15px;
   transition: 0.3s all;
 }
 
-#section2 button a:hover {
+#Functioning a:hover {
   background-color: #cfcccc;
   color: #111111;
-  transform: scale(1.01);
   transition: 0.3s all;
 }
 
@@ -321,36 +317,36 @@ footer {
   padding: 2.5% 5%;
 }
 
-footer .heightFooter {
+footer .height-footer {
   display: flex;
   justify-content: space-between;
 }
 
-footer .heightFooter .social {
+footer .height-footer .social {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   width: 31%;
 }
 
-footer .heightFooter .social h3 {
+footer .height-footer .social h3 {
   color: #ffffff;
   font-size: 1.8rem;
   font-weight: bold;
 }
 
 
-footer .heightFooter .social .icons img {
+footer .height-footer .social .icons img {
   width: 24px;
   height: 22px;
 }
 
-footer .heightFooter .social a {
+footer .height-footer .social a {
   display: inline-block;
   margin: 0.6rem 1rem 0 0;
 }
 
-footer .heightFooter .footNav {
+footer .height-footer .foot-nav {
   margin-right: 60px;
   width: 69%;
   display: flex;
@@ -358,40 +354,41 @@ footer .heightFooter .footNav {
   justify-content: space-between;
 }
 
-footer .heightFooter .footNav ul {
+footer .height-footer .foot-nav ul {
   list-style: none;
   margin: 0 20px 50px;
 }
 
-footer .heightFooter .footNav ul li a {
+footer .height-footer .foot-nav ul li a {
   text-decoration: none;
   color: #7e7e7e;
 }
 
 
-footer .heightFooter .footNav ul li a:hover {
+footer .height-footer .foot-nav ul li a:hover {
   color: #a1a1a1;
 }
 
-footer .endingFooter {
+footer .ending-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 5rem 0 0 0;
 }
 
-footer .endingFooter .copyright {
+footer .ending-footer .copyright {
   display: block;
   font-size: 0.8rem;
 }
 
-footer .endingFooter .QRcode {
+footer .ending-footer img {
+  width: 50px;
   cursor: pointer;
 }
 
 /* Fonts & Spans  */
 
-.violet {
+.purple {
   color: #6752dc;
 }
 
@@ -409,107 +406,54 @@ u {
 
 /* ------------RESPONSIVE---------------- */
 
-@media screen and (max-width: 989px) {
-  header {
-    flex-direction: column;
-    justify-content:flex-start;
-    overflow: scroll;
-    height: 100vh;
+@media screen and (max-width: 1061px) {
+
+  header .head-nav .download {
+    display: none;
   }
+
+  header .head-nav .download-responsive {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 921px) {
 
   header .logo {
     width: 100%;
-    padding: 3rem;
-  }
-  header .logo img {
-    width: 75px;
+    padding: 0 30px;
   }
 
-  header .logo i {
+  header .logo #bubble-nav {
     display: block;
-    font-size: 40px;
   }
 
-  header .headNav {
-    flex-direction: column;
-    height: 100vh;
-  }
-
-  header .headNav li{  
-    margin: 50px 0;
-  }
-  
-  header .headNav li a {
-    font-size: 2rem;
-  }
-
-  header .headNav li a:hover {
-    font-size: 2rem;
-  }
-
-/* ================================== */
-
-#section1 {
-  flex-direction: column;
-}
-
-#section1 .gauche {
-  width: 100%;
-  text-align: center;
-  align-items: center;
-}
-
-#section1 .gauche .description h1 {
-  display: none;
-}
-
-#section1 .gauche .description .h1_Responsive {
-  display: block;
-  font-size: 2.5rem;
-}
-
-#section1 .gauche .description p {
-  font-size: 1.1rem;
-}
-
-#section1 .gauche .downloadIcons {
-  height: 45%;
-  display: flex;
-  flex-direction: column;
-  margin: 7% 0;
-}
-
-
-#section1 .gauche .downloadIcons .ios {
-display: none;
-}
-
-#section1 .gauche .downloadIcons .android {
-  display: none;
-  }
-
-  #section1 .gauche .downloadIcons .responsiveDownload img {
-    display: block;
-    width: 280px;
-  }
-
-
-  #section1 .droite {
-    width: 100%;
-  }
-
-  #section1 .droite #login1 {
+  header .head-nav{
     display: none;
   }
 
-  #section1 .droite #loginR1 {
-    display: block;
+  #Introduction {
+
+    border-top: none;
   }
-  
-  #section1b {
-    display: none;
-   }
-  
+
+
 }
 
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 677px) {
+  
+  header {
+    height: 60px;
+  }
+header .logo {
+    padding: 0px 13px;
+}
+header .logo img {
+  width: 40px;
+}
+
+header .logo #bubble-nav{
+  font-size: 15px;
+  padding: 7px 9px;
+}
+}
